@@ -1,0 +1,22 @@
+# Dependencias (Nunca se suben, pesan demasiado)
+node_modules/
+bower_components/
+
+# Variables de entorno (¡SEGURIDAD! Contienen contraseñas y llaves)
+.env
+.env.local
+*.pem
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Carpetas de compilación o salida
+dist/
+build/
+out/
+
+# Logs y bases de datos locales
+*.log
+*.sqlite

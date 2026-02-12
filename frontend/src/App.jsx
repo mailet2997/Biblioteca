@@ -33,14 +33,18 @@
 // }
 
 // export default App
+import { Routes, Route } from "react-router-dom"
+import ProfileSelection from "./pages/ProfileSelection"
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold">
-        Biblioteca Familiar 📚
-      </h1>
+    <div className="min-h-screen bg-black text-white">
+      <Routes>
+        <Route path="/" element={<ProfileSelection />} />
+      </Routes>
     </div>
   )
 }
 
 export default App
+

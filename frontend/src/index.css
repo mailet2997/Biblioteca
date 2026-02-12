@@ -2,15 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset profesional */
+html, body, #root {
+  /* height: 100%;
+  margin: 0; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+ margin: 0;
+  min-height: 100vh;
+  /* El "background-attachment: fixed" evita que el fondo se mueva al hacer scroll */
+  /* background-attachment: fixed;  */
+  background-image: linear-gradient(
+    to bottom,
+    #271941 0% 20%,
+    #454c5a 20% 40%,
+    #485e72 40% 60%,
+    #98adc0 60% 80%,
+    #b19797 80% 100%
+
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  /* font-weight: 400; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,6 +64,20 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+}
+.text-des {
+  font-weight: 400;
+  /* font-weight: bold; */
+}
+.text-title{
+  font-weight: 400;
+  font-weight: bold;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button {
@@ -71,3 +111,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
